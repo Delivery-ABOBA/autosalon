@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "repl_nix_Sports"
+version = "0.1.0"
+description = ""
+authors = ["Replit user <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi-jwt-auth = "^0.5.0"
+mutagen = "^1.46.0"
+pydantic = "^1.10.7"
+SQLAlchemy = "^2.0.10"
+uvicorn = "^0.21.1"
+alembic = "^1.10.3"
+bcrypt = "^4.0.1"
+fastapi = "^0.95.1"
+requests = "^2.29.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
