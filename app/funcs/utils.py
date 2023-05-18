@@ -4,13 +4,8 @@ from fastapi.exceptions import HTTPException
 from fastapi_jwt_auth import AuthJWT
 from pydantic import BaseModel
 
-from app.dependencies import get_settings
-
-settings = get_settings()
-
-
 class JWTSettings(BaseModel):
-    authjwt_secret_key: str = settings.secret
+    authjwt_secret_key: str = "1686344400000"
 
 
 def get_jwt_sub(request, cookie: str = None):
